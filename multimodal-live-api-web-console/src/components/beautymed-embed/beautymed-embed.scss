@@ -1,0 +1,176 @@
+.beautymed-embed {
+  max-width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d3436;
+
+  .embed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
+    .clinic-logo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e17055;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        
+        &.connected {
+          background: #00b894;
+          animation: pulse 2s infinite;
+        }
+        
+        &.disconnected {
+          background: #e17055;
+        }
+      }
+    }
+  }
+
+  .voice-controls {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .record-button {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      box-shadow: 0 5px 15px rgba(209, 48, 49, 0.3);
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 7px 20px rgba(209, 48, 49, 0.4);
+      }
+
+      &.connected {
+        background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+        animation: recording-pulse 1.5s infinite;
+      }
+
+      &.connecting {
+        background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+      }
+
+      .spinner {
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-top: 2px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+    }
+  }
+
+  .response-display {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    min-height: 80px;
+
+    .assistant-name {
+      font-weight: bold;
+      color: #e17055;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .response-text {
+      line-height: 1.5;
+      font-size: 14px;
+    }
+  }
+
+  .quick-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .quick-action-btn {
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 10px;
+      padding: 12px 15px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #2d3436;
+
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+    }
+  }
+
+  .embed-footer {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(45, 52, 54, 0.7);
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes recording-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

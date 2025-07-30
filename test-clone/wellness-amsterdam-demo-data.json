@@ -1,0 +1,27 @@
+{
+  "lead_data": {
+    "company": "Wellness Center Amsterdam",
+    "contact_name": "Dr. Sarah van Bergen, DC",
+    "email": "info@wellnesscenteramsterdam.nl",
+    "phone": "+31 20 123 4567", 
+    "location": "Vondelstraat 123, 1054 GE Amsterdam, Netherlands",
+    "website_url": "https://www.wellnesscenteramsterdam.nl",
+    "demo_url": "https://test-clone-otzu8h54u-contact-jomarcellocs-projects.vercel.app",
+    "brand_colors": {
+      "primary": "blue-600",
+      "secondary": "emerald-500"
+    },
+    "agent_prompt": "U bent Robin, de planningsassistent bij Wellness Center Amsterdam. Uw primaire doel is om cliënten te helpen afspraken in te plannen voor wellness behandelingen met Dr. Sarah van Bergen, waaronder chiropractie, sporttherapie, massage, acupunctuur en wellness coaching.",
+    "first_message": "Dank u voor het bellen naar Wellness Center Amsterdam! Dit is Robin, uw wellness assistent. Wij zijn er om u te helpen uw helingsreis te beginnen met Dr. Sarah van Bergen. Welke van onze wellness behandelingen kan ik u vandaag helpen inplannen?",
+    "services": [
+      "Chiropractische zorg",
+      "Sporttherapie", 
+      "Massagetherapie",
+      "Acupunctuur",
+      "Wellness coaching"
+    ],
+    "practice_type": "wellness",
+    "created_date": "2025-07-25T11:45:00Z",
+    "deployment_status": "completed"
+  }
+}

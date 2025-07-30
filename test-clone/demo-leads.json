@@ -1,0 +1,36 @@
+{
+  "leads": [
+    {
+      "id": "smith-chiropractic",
+      "company": "Smith Chiropractic",
+      "contact_name": "Dr. Smith, DC",
+      "phone": "(555) 123-4567",
+      "location": "Example City, State",
+      "website_url": "https://smith-chiropractic.loca.lt",
+      "demo_url": "https://smith-chiropractic-demo-pfceyk8h8-contact-jomarcellocs-projects.vercel.app",
+      "practice_type": "Chiropractic",
+      "status": "Demo Created",
+      "brand_colors": {
+        "primary": "blue-600",
+        "secondary": "blue-500"
+      },
+      "created_at": "2025-07-14T15:30:00Z"
+    },
+    {
+      "id": "spinealign-center",
+      "company": "SpineAlign Center",
+      "contact_name": "Dr. SpineAlign, DC",
+      "phone": "(555) 987-6543",
+      "location": "Example City, State",
+      "website_url": "https://spinealign-center.loca.lt",
+      "demo_url": "https://spinealign-center-demo-ewwymqcup-contact-jomarcellocs-projects.vercel.app",
+      "practice_type": "Wellness/Chiropractic",
+      "status": "Demo Created",
+      "brand_colors": {
+        "primary": "emerald-600",
+        "secondary": "emerald-500"
+      },
+      "created_at": "2025-07-14T15:33:00Z"
+    }
+  ]
+}
